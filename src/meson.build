@@ -68,6 +68,10 @@ pkg.generate(libnvme,
     version: meson.project_version(),
     description: 'Manage "libnvme" subsystem devices (Non-volatile Memory Express)',
     url: 'http://github.com/linux-nvme/libnvme/',
+    # - src/*: LGPL-2.1-or-later
+    # - ccan/*, ccan/ccan/minmax/*: CC0
+    # - ccan/ccan/list/*: MIT
+    license: 'LGPL-2.1-or-later AND CC0 AND MIT',
 )
 
 libnvme_dep = declare_dependency(
@@ -119,6 +123,10 @@ pkg.generate(libnvme_mi,
     version: meson.project_version(),
     description: 'Manage "libnvme" subsystem devices (Non-volatile Memory Express) over Management Interface',
     url: 'http://github.com/linux-nvme/libnvme/',
+    # - src/*: LGPL-2.1-or-later
+    # - ccan/*, ccan/ccan/minmax/*: CC0
+    # - ccan/ccan/list/*: MIT
+    license: 'LGPL-2.1-or-later AND CC0 AND MIT',
 )
 
 mode = ['rw-r--r--', 0, 0]
